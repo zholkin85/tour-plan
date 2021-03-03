@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  color: #333333;
 }
 
 .container {
@@ -391,7 +392,6 @@ template {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #333333;
 }
 
 .search__button {
@@ -409,5 +409,30 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user__name {
+  margin-left: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */

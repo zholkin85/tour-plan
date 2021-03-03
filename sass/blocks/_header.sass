@@ -11,7 +11,6 @@
     position: relative
     border-radius: 6px
     overflow: hidden
-
     &__input
         width: 350px
         height: 40px
@@ -21,7 +20,6 @@
         border: none
         font-size: 12px
         line-height: 15px
-        color: #333333
     &__button
         position: absolute
         top: 0
@@ -33,4 +31,17 @@
         border: none
         background-color: $primary
         cursor: pointer
-
+.user
+    display: flex
+    align-items: center
+    text-decoration: none
+    &__avatar
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        object-fit: cover
+    &__name
+        margin-left: 18px
+        font-size: 14px
+        line-height: 18px
+        color: $text-color
