@@ -505,7 +505,7 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .search {
+  .search__input {
     width: 340px;
   }
 }
@@ -518,7 +518,7 @@ template {
   .logo {
     width: 120px;
   }
-  .search {
+  .search__input {
     width: 300px;
   }
   .user__name {
@@ -543,6 +543,7 @@ template {
   .menu-button {
     width: 16px;
     height: 11px;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
