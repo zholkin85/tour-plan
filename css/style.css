@@ -479,4 +479,53 @@ template {
   text-transform: uppercase;
   line-height: 18px;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .logo {
+    width: 132px;
+  }
+  .navbar-search {
+    margin-left: auto;
+  }
+  .navbar .navbar-menu {
+    padding: 22px 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .search {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .logo {
+    width: 120px;
+  }
+  .search {
+    width: 300px;
+  }
+  .user__name {
+    display: none;
+  }
+  .navbar__search {
+    margin-left: 8%;
+  }
+  .navbar .navbar-menu__link {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
