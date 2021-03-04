@@ -360,11 +360,11 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
 
-.header-wrapper {
+.navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,11 +378,11 @@ template {
   padding-bottom: 40px;
 }
 
-.header-wrapper .logo__image {
+.navbar-wrapper .logo__image {
   display: block;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 11%;
 }
