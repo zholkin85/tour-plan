@@ -534,6 +534,16 @@ template {
   margin-bottom: 0;
 }
 
+.hotel-info__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel-info__stars-img:not(:last-child) {
+  margin-right: 3px;
+}
+
 .hotel-info__offer {
   margin-left: 14px;
 }
@@ -698,6 +708,9 @@ template {
   }
   .hotel-info__stars {
     margin-bottom: 16px;
+  }
+  .hotel-info__stars-img:not(:last-child) {
+    margin-right: 2px;
   }
   .hotel-info__text {
     width: 100%;
