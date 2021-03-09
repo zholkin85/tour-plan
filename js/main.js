@@ -9,9 +9,4 @@ const swiper = new Swiper('.swiper-container', {
     },
 
     effect: 'fade',
-
-    //keyboard control
-    keyboard: {
-        enabled: true,
-    },
 })
