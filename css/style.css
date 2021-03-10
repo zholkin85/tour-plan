@@ -1106,22 +1106,17 @@ template {
   .slider {
     height: 175px;
   }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
   .newsletter-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    color: #FFFFFF;
-    font-style: normal;
+    margin-bottom: 37px;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
   }
   .subscribe {
-    width: 280px;
+    width: 100%;
     height: 55px;
   }
   .subscribe__input {
