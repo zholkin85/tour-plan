@@ -907,9 +907,6 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
-  overflow-wrap: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .reviews {
