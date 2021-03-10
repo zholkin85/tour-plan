@@ -679,9 +679,21 @@ template {
 }
 
 .rating__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter-mini {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
 }
 
 .booking {
