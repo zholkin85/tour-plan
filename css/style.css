@@ -836,10 +836,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .newsletter::before {
@@ -912,7 +908,7 @@ template {
 
 .subscribe__button {
   position: absolute;
-  max-width: 21%;
+  max-width: 25%;
   padding: 18px;
   right: 0;
   top: 0;
@@ -1301,6 +1297,16 @@ template {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .reviews {
+    padding: 40px 0 50px 0;
+  }
+  .reviews__title {
+    margin: auto;
+    width: 85%;
+    font-size: 18px;
+    Line-height: 23px;
+    margin-bottom: 42px;
   }
 }
 /*# sourceMappingURL=style.css.map */
