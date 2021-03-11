@@ -904,7 +904,7 @@ template {
   height: 100%;
   border: none;
   padding-left: 33px;
-  padding-right: 75px;
+  padding-right: 80px;
   font-weight: 300;
   Font-size: 14px;
   Line-height: 18px;
@@ -912,13 +912,28 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  max-width: 21%;
+  padding: 18px;
   right: 0;
   top: 0;
   height: 100%;
   border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
   background-color: #EC1F46;
   color: #FFFFFF;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.subscribe__button:hover {
+  max-width: 50%;
+  white-space: inherit;
+  text-overflow: inherit;
+  overflow: inherit;
 }
 
 .reviews {
