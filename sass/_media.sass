@@ -7,6 +7,9 @@
             width: 100%
             height: 100%
             object-fit: cover
+    .card
+        width: 225px
+        max-height: 225px
 
 
 @media  (max-width: 992px)
@@ -43,6 +46,14 @@
         &-slider
             &__item
                 max-width: 580px
+    .card
+        width: 48%
+        height: 225px
+    .activities
+        &__card:nth-child(-n+2)
+            margin-bottom: 20px
+            
+
     
 @media  (max-width: 768px)
     .container
@@ -76,6 +87,9 @@
             flex-direction: column
             align-items: flex-start
     .reviews
+        &__title
+            font-size: 30px
+            Line-height: 48px
         &-slider
             &__item
                 padding: 0 30px 30px
@@ -85,12 +99,14 @@
                 top: 32px
                 &--prev
                     left: 50%
-                    margin-left: -65px
+                    margin-left: -95px
                     transform: translate(-50%, 0)
                 &--next
                     right: 50%
-                    margin-right: -65px
+                    margin-right: -95px
                     transform: translate(50%, 0)
+    .activities
+        padding: 60px 0 70px 0
 @media (max-width: 576px)
     .navbar__nav
         display: none
@@ -147,6 +163,17 @@
         width: 100%
     .map
         width: 100%
+    .activities
+        &__title
+            text-align: center
+        &-wrapper
+            flex-direction: column
+            align-items: center
+        &__card:nth-last-child(n+2)
+            margin-bottom: 20px
+    .card
+        width: 80%
+
 @media (max-width: 480px)
     .hotel-slider
         height: 175px
@@ -162,6 +189,8 @@
         height: 55px
         &__input
             padding-left: 20px
+        &__button
+            max-width: 26%
     .reviews
         padding: 40px 0 50px 0
         &__title
@@ -170,3 +199,15 @@
             font-size: 18px
             Line-height: 23px
             margin-bottom: 42px
+    .activities
+        padding: 40px 0 60px 0
+        &__title
+            text-align: left
+            margin-bottom: 36px
+            font-size: 18px;
+            line-height: 23px;
+        &-wrapper
+            align-items: flex-start
+    .card
+        width: 90%
+    
