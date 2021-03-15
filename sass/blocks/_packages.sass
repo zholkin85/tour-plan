@@ -1,0 +1,62 @@
+.packages
+    padding: 40px 0 70px 0
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 65px
+.card-hotel-top
+    display: grid
+    grid-template-columns: 50% 50%
+    max-width: 730px
+    &__image
+        position: relative
+    &__offer
+        position: absolute
+        top: 26px
+        padding: 8px 12px
+        max-width: 100px
+        border-radius: 0px 4px 4px 0px
+    &__booking
+        width: 100%
+        height: 100%
+        font-family: Mulish
+        border-radius: 0
+        border-top-right-radius: 6px
+        border-bottom-right-radius: 6px
+        &-info
+            flex-direction: column
+            margin-bottom: 0
+        &-stars
+            margin-bottom: 5px
+        &-title
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 27px
+        &-text-info
+            font-size: 14px
+            line-height: 22px
+            margin-bottom: 34px
+        &-room
+            margin-bottom: 37px
+        &-text 
+            justify-content: start
+        &-price-wrapper
+            display: flex
+            justify-content: space-between
+        &-price
+        &-old-price
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            margin-bottom: 5px
+        &-pricetag
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+        &-button
+            @include book-now
+    
