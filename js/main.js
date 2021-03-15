@@ -30,6 +30,12 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     keyboard: {
         enabled: true,
     },
+
+    //autoplay
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
 })
 
 ymaps.ready(init)
