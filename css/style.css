@@ -851,12 +851,23 @@ template {
   margin-bottom: 65px;
 }
 
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+
 .card-hotel-top {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  max-width: 730px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column: span 2;
+  grid-auto-flow: row;
 }
 
 .card-hotel-top__image {
@@ -939,6 +950,104 @@ template {
 }
 
 .card-hotel-top__booking-button {
+  max-width: 140px;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 11px 27px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.card-hotel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  max-width: 350px;
+  max-height: 500px;
+}
+
+.card-hotel__image {
+  position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  overflow: hidden;
+}
+
+.card-hotel__offer {
+  position: absolute;
+  top: 26px;
+  padding: 8px 12px;
+  max-width: 100px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.card-hotel__booking {
+  width: 100%;
+  height: 100%;
+  font-family: Mulish;
+  border-radius: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card-hotel__booking-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0;
+}
+
+.card-hotel__booking-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 23px;
+}
+
+.card-hotel__booking-room {
+  margin-bottom: 24px;
+}
+
+.card-hotel__booking-text {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.card-hotel__booking-price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-hotel__booking-old-price {
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.card-hotel__booking-pricetag {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card-hotel__booking-button {
   max-width: 140px;
   font-family: Nunito;
   font-weight: 600;
