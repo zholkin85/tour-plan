@@ -949,6 +949,9 @@ template {
   border: none;
   background-color: #EC1F46;
   border-radius: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   cursor: pointer;
 }
 
@@ -1078,6 +1081,7 @@ template {
   background-color: #fff;
   border-radius: 8px;
   padding: 0 62px 30px;
+  z-index: 2;
 }
 
 .reviews-slider__item:before {
@@ -1089,7 +1093,6 @@ template {
   height: 47px;
   background-image: url(../img/quote-left.svg);
   background-repeat: no-repeat;
-  opacity: 0.4;
 }
 
 .reviews-slider__item:after {
@@ -1101,7 +1104,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
-  opacity: 0.4;
+  z-index: -1;
 }
 
 .reviews-slider__button {
@@ -1219,6 +1222,8 @@ template {
   padding: 24px 26px;
   border-radius: 6px;
   overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -1274,6 +1279,9 @@ template {
   border: none;
   background-color: #EC1F46;
   border-radius: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   cursor: pointer;
 }
 
