@@ -1410,25 +1410,25 @@ template {
   .activities__card:nth-last-child(n+2) {
     margin-bottom: 20px;
   }
-  .card {
+  .activities__card {
     width: 100%;
   }
-  .card__order-1 {
+  .activities__card-order-1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .card__order-2 {
+  .activities__card-order-2 {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  .card__order-3 {
+  .activities__card-order-3 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .card__order-4 {
+  .activities__card-order-4 {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
