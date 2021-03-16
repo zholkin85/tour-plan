@@ -42,6 +42,17 @@
         width: 49%
     .map
         width: 49%
+    .packages
+        &-wrapper
+            grid-template-columns: 1fr 
+            grid-template-rows: 1fr  
+            grid-gap: 30px
+    .card-hotel-top
+        &__booking
+            width: 100%
+    .card-hotel
+        &__booking
+            width: 100%
     .reviews
         &-slider
             &__item
@@ -107,6 +118,28 @@
                     transform: translate(50%, 0)
     .activities
         padding: 60px 0 70px 0
+    .packages
+        padding: 20px 0 50px 0
+        &__title
+            font-size: 26px
+            line-height: 35px
+            margin-bottom: 45px
+        &-wrapper
+            grid-gap: 0
+            grid-row-gap: 30px
+    .card-hotel-top
+        grid-template-columns: 1fr
+        &__image
+            &-hotel
+                max-height: 450px
+        &__booking
+            width: 100%
+    .card-hotel
+        grid-template-columns: 
+        grid-column: span 2
+        grid-template-rows: 1fr 
+        &__booking
+            width: 100%
 @media (max-width: 576px)
     .navbar__nav
         display: none

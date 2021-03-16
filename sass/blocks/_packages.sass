@@ -10,15 +10,17 @@
     &-wrapper
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 1fr 1fr
         grid-gap: 30px
 .card-hotel-top
     display: grid
     grid-template-columns: 1fr 1fr
     grid-column: span 2
-    grid-auto-flow: row
     &__image
         position: relative
+        &-hotel
+            width: 100%
+            height: 100%
+            overflow: hidden
     &__offer
         position: absolute
         top: 26px
@@ -36,6 +38,7 @@
             flex-direction: column
             margin-bottom: 0
         &-stars
+            margin-top: 26px
             margin-bottom: 5px
         &-title
             font-weight: bold
@@ -68,13 +71,17 @@
 .card-hotel
     display: grid
     grid-template-rows: 1fr 1fr
-    max-width: 350px
-    max-height: 500px
+    max-width: 100%
+    max-height: 100%
     &__image
         position: relative
         border-top-left-radius: 6px
         border-top-right-radius: 6px
         overflow: hidden
+        &-hotel
+            width: 100%
+            height: 100%
+            overflow: hidden
     &__offer
         position: absolute
         top: 26px
@@ -103,7 +110,6 @@
         &-price-wrapper
             display: flex
             justify-content: space-between
-        &-price
         &-old-price
             font-size: 14px
             line-height: 18px
