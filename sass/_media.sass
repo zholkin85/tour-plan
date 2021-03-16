@@ -10,7 +10,10 @@
     .card
         width: 225px
         max-height: 225px
-
+    .card-hotel-top
+        &__booking
+            &-text-info
+                overflow: scroll
 
 @media  (max-width: 992px)
     .container,
@@ -44,12 +47,14 @@
         width: 49%
     .packages
         &-wrapper
-            grid-template-columns: 1fr 
+            grid-template-columns: 1fr 1fr
             grid-template-rows: 1fr  
             grid-gap: 30px
     .card-hotel-top
         &__booking
             width: 100%
+            &-text-info
+                overflow: hidden
     .card-hotel
         &__booking
             width: 100%
@@ -125,21 +130,33 @@
             line-height: 35px
             margin-bottom: 45px
         &-wrapper
-            grid-gap: 0
-            grid-row-gap: 30px
+            grid-gap: 30px
     .card-hotel-top
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr 1fr
         &__image
             &-hotel
-                max-height: 450px
+                max-height: 500px
         &__booking
             width: 100%
-    .card-hotel
-        grid-template-columns: 
-        grid-column: span 2
+            &-stars 
+                margin-top: 0
+            &-text-info
+                margin-bottom: 24px
+            &-room
+                margin-bottom: 22px
+            &-pricetag
+                font-size: 18px
+                line-height: 30px
+    .card-hotel  
         grid-template-rows: 1fr 
+        &__image
+            &-hotel
+                height: 250px
         &__booking
             width: 100%
+            &-pricetag
+                font-size: 18px
+                line-height: 30px
 @media (max-width: 576px)
     .navbar__nav
         display: none
@@ -214,7 +231,8 @@
                 order: 2
             &-order-4
                 order: 4
-
+    .card-hotel-top
+        grid-template-columns: 1fr 
 @media (max-width: 480px)
     .hotel-slider
         height: 175px
