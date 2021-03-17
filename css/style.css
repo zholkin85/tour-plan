@@ -1630,6 +1630,7 @@ template {
   }
   .card-hotel-top__booking-text-info {
     margin-bottom: 24px;
+    overflow: scroll;
   }
   .card-hotel-top__booking-room {
     margin-bottom: 22px;
@@ -1787,6 +1788,17 @@ template {
   .card-hotel-top {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .card-hotel-top__image-hotel {
+    max-height: 400px;
+  }
+  .card-hotel-top__booking-text-info {
+    overflow: hidden;
+  }
+  .card-hotel {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-column: span 2;
   }
 }
 
