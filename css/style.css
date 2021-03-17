@@ -535,7 +535,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hotel-info__name {
@@ -752,28 +752,25 @@ template {
 }
 
 .booking__room {
+  padding: 0;
   margin-top: 4px;
 }
 
 .booking__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  grid-gap: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
 }
 
-.booking__description {
-  margin-left: 9px;
+.booking__text:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .booking__call-center {
@@ -872,6 +869,9 @@ template {
 
 .card-hotel-top__image {
   position: relative;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  overflow: hidden;
 }
 
 .card-hotel-top__image-hotel {
@@ -906,7 +906,7 @@ template {
 }
 
 .card-hotel-top__booking-stars {
-  margin-top: 16px;
+  margin-top: 23px;
   margin-bottom: 5px;
 }
 
@@ -926,6 +926,7 @@ template {
 }
 
 .card-hotel-top__booking-room {
+  padding: 0;
   margin-bottom: 37px;
 }
 

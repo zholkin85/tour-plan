@@ -5,7 +5,7 @@
         display: flex
         align-items: center
         justify-content: space-between
-        padding-bottom: 20px
+        margin-bottom: 20px
         &__name
             margin-top: 4px
             margin-bottom: 0
@@ -133,18 +133,20 @@
         font-size: 12px
         line-height: 16px
     &__room
+        padding: 0
         margin-top: 4px
     &__text
-        display: flex
-        align-items: center
-        justify-content: space-between
-        margin-bottom: 8px
+        display: grid
+        grid-template-columns: max-content 1fr
+        grid-gap: 10px 
         font-style: normal
         font-weight: normal
         font-size: 12px
         line-height: 16px
-    &__description
-        margin-left: 9px
+    &__icon 
+        
+    &__text:not(:last-child)        
+        margin-bottom: 8px
     &__call-center
         display: flex
         align-items: center
