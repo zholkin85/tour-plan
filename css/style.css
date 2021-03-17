@@ -1683,6 +1683,10 @@ template {
   .activities__card:nth-child(-n+2) {
     margin-bottom: 20px;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 768px) {
