@@ -759,9 +759,9 @@ template {
 .booking__text {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
   grid-gap: 10px;
   font-style: normal;
   font-weight: normal;
