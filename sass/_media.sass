@@ -142,6 +142,7 @@
                 margin-top: 0
             &-text-info
                 margin-bottom: 24px
+                overflow: scroll
             &-room
                 margin-bottom: 22px
             &-pricetag
@@ -232,7 +233,17 @@
             &-order-4
                 order: 4
     .card-hotel-top
-        grid-template-columns: 1fr 
+        grid-template-columns: 1fr
+        &__image
+            &-hotel
+                max-height: 400px
+        &__booking
+            &-text-info
+                overflow: hidden
+    .card-hotel
+        grid-template-rows: 1fr
+        grid-column: span 2
+
 @media (max-width: 480px)
     .hotel-slider
         height: 175px
