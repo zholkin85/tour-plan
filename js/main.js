@@ -49,3 +49,9 @@ function init() {
         zoom: 15,
     })
 }
+
+var menuButton = document.querySelector('.menu-button')
+menuButton.addEventListener('click', function() {
+    console.log('Клик по кнопке меню')
+    document.querySelector('.navbar__nav').classList.toggle('navbar__nav--visible')
+})

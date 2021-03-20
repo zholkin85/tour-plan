@@ -88,6 +88,13 @@
         &__name
             display: none
     .navbar
+        &__mobile
+            &--fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
         &__search
             margin-left: 8%
         .navbar-menu
@@ -189,9 +196,18 @@
 @media (max-width: 576px)
     .navbar__nav
         display: none
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 78px
+        &--visible
+                display: block
     .navbar
-        &__search, &__user
-            display: none
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
     .menu-button
         width: 16px
         height: 11px

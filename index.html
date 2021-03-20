@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-wrapper">
                 <a href="#" class="logo">
@@ -22,7 +22,7 @@
                 </a>
                 <!-- /.logo -->
 
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="icon:search">
@@ -30,7 +30,7 @@
                 </form>
                 <!-- /.search -->
 
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
                     <img src="img/user-avatar.jpg" alt="Avatar:Nathan" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -736,53 +736,100 @@
                     <h3 class="footer__title">Contact Details</h3>
                     <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
                     <ul class="footer__ul">
-                        <li class="footer__item footer__item-contacts"><img src="img/map-marker.svg" alt="Icon: map class=" footer__icon " class=" footer__icon " class=" footer__icon "">
+                        <li class="footer__item footer__item-contacts">
+                            <img src="img/map-marker.svg" alt="Icon: map class=" footer__icon " class=" footer__icon " class=" footer__icon ">
                             <span>9748 Blossom Hill
                                 Rd undefined Lansing, Idaho 68545 United States</span></li>
-                        <li class=" footer__item footer__item-contacts"><img src="img/contact-phone-call.svg" alt="Icon: phone-call" class="footer__icon" class="footer__icon" class="footer__icon">
-                            <ul class="footer__ul">
-                                <li class="footer__item">
-                                    <a href="tel:269 1500" class="footer__link">Tel (business hours) : 269 1500</a>
+                        <li class=" footer__item footer__item-contacts "><img src=" img/contact-phone-call.svg "
+                                alt=" Icon: phone-call " class=" footer__icon " class=" footer__icon " class=" footer__icon ">
+                            <ul class=" footer__ul ">
+                                <li class=" footer__item ">
+                                    <a href=" tel:269 1500 " class=" footer__link ">Tel (business hours) : 269 1500</a>
                                 </li>
-                                <li class="footer__item">
-                                    <a href="tel:52-56-61-38" class="footer__link">Tel (hotline) Monday - Saturday:
+                                <li class=" footer__item ">
+                                    <a href=" tel:52-56-61-38 " class=" footer__link ">Tel (hotline) Monday - Saturday:
                                         52-56-61-38 (08:00 am –
                                         20:00pm)</a>
                                 </li>
-                                <li class="footer__item">
-                                    <a href="tel:52-56-61-38" class="footer__link">Tel (hotline) Sunday: 52-56-61-38
+                                <li class=" footer__item ">
+                                    <a href=" tel:52-56-61-38 " class=" footer__link ">Tel (hotline) Sunday: 52-56-61-38
                                         (08:00 am – 14:00
                                         pm)</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="footer__item footer__item-contacts"><img src="img/email.svg" alt="Icon: email" class="footer__icon" class="footer__icon" class="footer__icon">
-                            <a href="email:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
+                        <li class=" footer__item footer__item-contacts "><img src=" img/email.svg " alt=" Icon: email "
+                                class=" footer__icon " class=" footer__icon " class=" footer__icon ">
+                            <a href=" email:cherly.lawson@example.com " class=" footer__link ">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
-                <div class="footer__contact-form">
-                    <h3 class="footer__title">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea class="footer__message footer__input" cols="30" rows="10" placeholder="Message"></textarea>
-                        <button class="button footer__button">Send</button>
-                        <span class="footer__info">* Required Fields</span>
+                <div class=" footer__contact-form ">
+                    <h3 class=" footer__title ">Send us a message</h3>
+                    <form action=" # " class=" footer__form ">
+                        <input type=" text " class=" input footer__input " placeholder=" Your Full Name ">
+                        <input type=" text " class=" input footer__input " placeholder=" Phone Number* ">
+                        <textarea class=" footer__message footer__input " cols=" 30 " rows=" 10 "
+                            placeholder=" Message "></textarea>
+                        <button class=" button footer__button ">Send</button>
+                        <span class=" footer__info ">* Required Fields</span>
                     </form>
                 </div>
                 <!-- /.footer__contact-form -->
+                <div class=" footer__bottom-wrapper ">
+                    <div class=" footer__bottom ">
+                        <ul class=" footer__ul footer__ul-bottom ">
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">Disclaimer</a>
+                        </li>
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">Conditions of use</a>
+                        </li>
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">Cancellation policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" footer__bottom-payment ">
+                    <ul class=" footer__ul footer__ul-bottom ">
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">
+                                <img src=" img/payment/amex.png " alt=" " class=" footer__icon ">
+                            </a>
+                        </li>
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">
+                                <img src=" img/payment/apple-logo.png " alt=" " class=" footer__icon "></a>
+                        </li>
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">
+                                <img src=" img/payment/amazon.png " alt=" " class=" footer__icon ">
+                            </a>
+                        </li>
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">
+                                <img src=" img/payment/paypal.png " alt=" " class=" footer__icon ">
+                            </a>
+                        </li>
+                        <li class=" footer__item ">
+                            <a href=" # " class=" footer__link ">
+                                <img src=" img/payment/eurocard.png " alt=" " class=" footer__icon ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- /.footer-wrapper -->
+        </div>
+        <!-- /.footer-wrapper -->
         </div>
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src=" js/parallax.min.js "></script>
+    <script src=" js/swiper-bundle.min.js "></script>
+    <script src=" js/main.js "></script>
 </body>
 
 </html>

@@ -1708,6 +1708,13 @@ template {
   .user__name {
     display: none;
   }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
   .navbar__search {
     margin-left: 8%;
   }
@@ -1855,9 +1862,23 @@ template {
 @media (max-width: 576px) {
   .navbar__nav {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
   }
-  .navbar__search, .navbar__user {
-    display: none;
+  .navbar__nav--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .menu-button {
     width: 16px;
