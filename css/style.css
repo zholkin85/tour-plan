@@ -397,7 +397,7 @@ template {
 }
 
 .logo {
-  width: 177px;
+  max-width: 177px;
 }
 
 .search {
@@ -470,7 +470,7 @@ template {
   background-color: #0A223D;
 }
 
-.navbar__nav .navbar-menu {
+.navbar-menu {
   list-style: none;
   margin: 0;
   padding: 31px 0;
@@ -486,11 +486,15 @@ template {
   color: #FFFFFF;
 }
 
-.navbar__nav .navbar-menu__link {
+.navbar-menu__link {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 18px;
+}
+
+.navbar-menu__item--mobile--visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -657,6 +661,7 @@ template {
   background-color: #EC1F46;
   border-radius: 3px;
   color: #FFFFFF;
+  z-index: 100;
 }
 
 .rating {
@@ -1700,7 +1705,7 @@ template {
     width: 92%;
   }
   .logo {
-    width: 120px;
+    width: 130px;
   }
   .search__input {
     width: 300px;
@@ -1716,11 +1721,14 @@ template {
     z-index: 99;
   }
   .navbar__search {
-    margin-left: 8%;
+    margin-left: 12%;
   }
   .navbar .navbar-menu__link {
     font-size: 11px;
     line-height: 15px;
+  }
+  .breadcrumb {
+    margin-top: 180px;
   }
   .hotel-slider {
     height: 300px;
@@ -1867,6 +1875,7 @@ template {
     right: 0;
     bottom: 0;
     top: 78px;
+    padding-top: 30px;
   }
   .navbar__nav--visible {
     display: block;
@@ -1879,6 +1888,34 @@ template {
   }
   .navbar-menu__item {
     margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
+    display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .user__name {
+    display: block;
+  }
+  .user__name--light {
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .menu-button {
     width: 16px;
@@ -1905,6 +1942,9 @@ template {
     Width: 16px;
     Height: 1px;
     background-color: #333333;
+  }
+  .breadcrumb {
+    margin-top: 100px;
   }
   .logo {
     width: 99px;

@@ -80,7 +80,7 @@
         max-width: 576px
         width: 92%
     .logo
-        width: 120px
+        width: 130px
     .search
         &__input
             width: 300px
@@ -96,11 +96,13 @@
                 right: 0
                 z-index: 99
         &__search
-            margin-left: 8%
+            margin-left: 12%
         .navbar-menu
             &__link
                 font-size: 11px
                 line-height: 15px
+    .breadcrumb
+        margin-top: 180px
     .hotel-slider
         height: 300px
     .booking
@@ -201,6 +203,7 @@
         right: 0
         bottom: 0
         top: 78px
+        padding-top: 30px
         &--visible
                 display: block
     .navbar
@@ -208,6 +211,26 @@
             flex-direction: column
             &__item
                 margin-bottom: 20px
+                &--mobile
+                    &--visible
+                        display: block
+        &__user, &__search
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+    .user
+        &__name
+            display: block
+            &--light
+                color: $light
+                margin-left: 0
+                margin-top: 10px
+
     .menu-button
         width: 16px
         height: 11px
@@ -223,6 +246,8 @@
             Width: 16px
             Height: 1px
             background-color: $text-color
+    .breadcrumb
+        margin-top: 100px
     .logo
         width: 99px
     .hotel
