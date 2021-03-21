@@ -26,6 +26,29 @@ h2, h3, p {
   padding: 0;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 23px;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -661,7 +684,6 @@ template {
   background-color: #EC1F46;
   border-radius: 3px;
   color: #FFFFFF;
-  z-index: 100;
 }
 
 .rating {
@@ -1509,15 +1531,7 @@ template {
   list-style: none;
 }
 
-.footer__title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  margin: 0 0 16px 0;
-  text-transform: uppercase;
-}
-
-.footer__title--inline {
+.footer__ul--inline {
   margin: 0 43px 0 0;
 }
 
@@ -1556,10 +1570,6 @@ template {
 }
 
 .footer__input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 18px 23px;
   margin-bottom: 15px;
   width: 48%;
 }
@@ -1591,11 +1601,66 @@ template {
   padding: 18px 66px;
 }
 
-.footer__info {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #E0E0E0;
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  border-radius: 8px;
+  z-index: 101;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  min-height: 123px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  max-width: 140px;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 11px 27px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  width: 47%;
+  margin-right: 61px;
 }
 
 @media (max-width: 1200px) {
