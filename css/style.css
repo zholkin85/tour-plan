@@ -1606,7 +1606,7 @@ template {
 .footer__message {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  max-height: 125px;
+  height: 125px;
   margin-bottom: 23px;
   overflow: auto;
 }
