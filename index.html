@@ -780,10 +780,10 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title title">Send us a message</h3>
-                    <form action="#" class="footer__form form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea class="footer__message footer__input" cols="30" rows="10" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
+                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+                        <textarea class="footer__message footer__input" placeholder="Message" name="massage"></textarea>
                         <div class="footer__button-wrapper">
                             <button class="button footer__button">Send</button>
                             <span class="footer__info info">* Required Fields</span>
