@@ -28,15 +28,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'mail.19nikolas85.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'besttourplan@19nikolas85.ru'; // Логин на почте
-    $mail->Password   = '2F2g5W2s'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'nikolayzholkin@gmail.com'; // Логин на почте
+    $mail->Password   = 'blisytrgugkwvaed'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('besttourplan@19nikolas85.ru', 'Nikolay Zholkin'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('zholkin85@yandex.ru');  
+    $mail->addAddress('besttourplan@19nikolas85.ru');  
 
 // Отправка сообщения
 $mail->isHTML(true);
