@@ -37,11 +37,6 @@
             justify-self: end
             grid-column: span 2
             max-width: 539px
-    &__form
-        display: flex
-        align-items: center
-        justify-content: space-between
-        flex-wrap: wrap
     &__ul
         padding: 0
         margin: 0
@@ -78,10 +73,7 @@
         margin-bottom: 15px
         width: 48%
     &__message
-        flex-basis: 100%
-        height: 125px
-        margin-bottom: 23px
-        overflow: auto
+        +form
     &__button
         &-wrapper
             flex-basis: 100%
@@ -94,7 +86,7 @@
     &__bottom-wrapper
         display: grid
         grid-template-columns: 1fr min-content
-        grid-column: 2
-        grid-column-end: span 3
+        grid-column-end: span 5
+        justify-items: center
 
         
