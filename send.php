@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $massage = $_POST['massage'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "New massage Best Tour Plan";
@@ -16,7 +17,9 @@ $body = "
 <b>Name:</b> $name<br>
 <b>Phone:</b> $phone<br><br>
 <b>Massage:</b><br>$massage
+<b>Email:</b><br>$email
 ";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -41,7 +44,8 @@ try {
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
-$mail->Body = $body;    
+$mail->Body = $body;
+
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -53,4 +57,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('location: thankyou.html');
