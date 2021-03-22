@@ -173,7 +173,9 @@
                 line-height: 30px
     .footer
         &-wrapper
-            grid-template-columns: repeat(6, 1fr) 
+            grid-template-columns: repeat(6, 1fr)
+            &:not(:last-child)
+                grid-gap: 40px
         &__logo
             grid-column: span 2
         &__social
@@ -195,6 +197,11 @@
                 grid-row: 4
         &__input
             width: 48%
+        &__bottom
+            &-wrapper
+                grid-template-columns: 1fr
+                grid-column: span 6
+                grid-gap: 10px
 @media (max-width: 576px)
     .navbar__nav
         display: none
@@ -340,7 +347,15 @@
                 grid-column: 1
         &__input
             width: 100%
-
+        &__info
+            margin-bottom: 15px
+        &__button
+            &-wrapper
+                flex-direction: column-reverse
+                align-items: start
+        &__bottom
+            &-wrapper
+                grid-column: 1
 @media (max-width: 480px)
     .hotel-slider
         height: 175px
