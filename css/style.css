@@ -2325,5 +2325,8 @@ template {
   .card {
     width: 100%;
   }
+  .footer__item-bottom:not(:last-child) {
+    margin-right: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
