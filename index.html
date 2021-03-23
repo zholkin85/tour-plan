@@ -115,7 +115,7 @@
     <!-- /.breadcrumb -->
     <section class="hotel">
         <div class="container">
-            <div class="hotel-info">
+            <div class="hotel-info ">
                 <div class="hotel-info__text">
                     <div class="hotel-wrapper">
                         <div class="stars">
@@ -277,7 +277,7 @@
                                     <strong class="card-hotel-top__booking-pricetag">$ 8,500</strong>
                                 </div>
                                 <!-- /.booking__price -->
-                                <button class="card-hotel-top__booking-button">Book Now</button>
+                                <button data-toggle="modal" data-href="#booking-modal" class="card-hotel-top__booking-button">Book Now</button>
                                 <!-- /.card__button -->
                             </div>
                             <!-- /.card-hotel-top__booking-price-wrapper -->
@@ -326,7 +326,7 @@
                                     <strong class="card-hotel__booking-pricetag">$ 3,000</strong>
                                 </div>
                                 <!-- /.booking__price -->
-                                <button class="card-hotel__booking-button">Book Now</button>
+                                <button data-toggle="modal" data-href="#booking-modal" class="card-hotel__booking-button">Book Now</button>
                                 <!-- /.card__button -->
                             </div>
                             <!-- /.card-hotel__booking-price-wrapper -->
@@ -375,7 +375,7 @@
                                     <strong class="card-hotel__booking-pricetag">$ 9,500</strong>
                                 </div>
                                 <!-- /.booking__price -->
-                                <button class="card-hotel__booking-button">Book Now</button>
+                                <button data-toggle="modal" data-href="#booking-modal" class="card-hotel__booking-button">Book Now</button>
                                 <!-- /.card__button -->
                             </div>
                             <!-- /.card-hotel__booking-price-wrapper -->
@@ -424,7 +424,7 @@
                                     <strong class="card-hotel__booking-pricetag">$ 2,500</strong>
                                 </div>
                                 <!-- /.booking__price -->
-                                <button class="card-hotel__booking-button">Book Now</button>
+                                <button data-toggle="modal" data-href="#booking-modal" class="card-hotel__booking-button">Book Now</button>
                                 <!-- /.card__button -->
                             </div>
                             <!-- /.card-hotel__booking-price-wrapper -->
@@ -473,7 +473,7 @@
                                     <strong class="card-hotel__booking-pricetag">$ 3,500</strong>
                                 </div>
                                 <!-- /.booking__price -->
-                                <button class="card-hotel__booking-button">Book Now</button>
+                                <button data-toggle="modal" data-href="#booking-modal" class="card-hotel__booking-button">Book Now</button>
                                 <!-- /.card__button -->
                             </div>
                             <!-- /.card-hotel__booking-price-wrapper -->
@@ -630,28 +630,28 @@
                 <div class="card activities__card activities__card-order-1">
                     <img src="img/Activities/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
                 <div class="card activities__card activities__card-order-2">
                     <img src="img/Activities/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
                 <div class="card activities__card activities__card-order-3">
                     <img src="img/Activities/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
                 <div class="card activities__card activities__card-order-4">
                     <img src="img/Activities/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
@@ -850,11 +850,11 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title title">Booking</h3>
-            <form action="#" class="modal__form form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name">
-                <input type="text" class="input modal__input" placeholder="Phone Number*">
-                <input type="text" class="input modal__input" placeholder="Email*">
-                <textarea class="modal__message input" placeholder="Message"></textarea>
+            <form action="send.php" method="POST" class="modal__form form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
+                <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+                <input type="text" class="input modal__input" placeholder="Email*" name="email">
+                <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info info">* Required Fields</span>
             </form>
@@ -872,10 +872,10 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title title">Send us a feedback</h3>
-            <form action="#" class="modal__form form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name">
-                <input type="text" class="input modal__input" placeholder="Phone Number*">
-                <textarea class="modal__message input" placeholder="Message"></textarea>
+            <form action="send.php" method="POST" class="modal__form form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
+                <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+                <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info info">* Required Fields</span>
             </form>

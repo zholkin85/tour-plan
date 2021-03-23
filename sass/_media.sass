@@ -73,14 +73,15 @@
             grid-row: 1 / 2
         &__input
             width: 100%    
-
+    .modal
+        &__dialog
+            max-width: 578px
+            padding: 23px 58px
     
 @media  (max-width: 768px)
     .container
         max-width: 576px
         width: 92%
-    .logo
-        width: 130px
     .search
         &__input
             width: 300px
@@ -96,7 +97,7 @@
                 right: 0
                 z-index: 99
         &__search
-            margin-left: 12%
+            margin-left: 6%
         .navbar-menu
             &__link
                 font-size: 11px
@@ -202,18 +203,28 @@
                 grid-template-columns: 1fr
                 grid-column: span 6
                 grid-gap: 10px
+                justify-items: self-start
+    .modal
+        &__dialog
+            width: 60%
+            padding: 23px 28px
 @media (max-width: 576px)
     .navbar__nav
-        display: none
         position: fixed
-        left: 0
         right: 0
         bottom: 0
         top: 78px
         padding-top: 30px
+        max-height: 440px
+        width: 325px
+        transition: 0.5s
+        transform: translateX(100%)
+        overflow: auto
         &--visible
-                display: block
+                transform: translateX(0%)
     .navbar
+        &-wrapper
+            padding: 28px 0 28px 0
         &-menu
             flex-direction: column
             &__item
@@ -254,7 +265,7 @@
             Height: 1px
             background-color: $text-color
     .breadcrumb
-        margin-top: 100px
+        margin-top: 67px
     .logo
         width: 99px
     .hotel
@@ -356,6 +367,10 @@
         &__bottom
             &-wrapper
                 grid-column: 1
+    .modal
+        &__dialog
+            width: 70%
+            padding: 23px 28px
 @media (max-width: 480px)
     .hotel-slider
         height: 175px
@@ -396,6 +411,9 @@
         &__item
             &-bottom:not(:last-child)
                 margin-right: 12px
-
+    .modal
+        &__dialog
+            width: 95%
+            padding: 23px 18px
         
     
