@@ -16,7 +16,7 @@ $body = "
 <h2>New massage</h2>
 <b>Name:</b> $name<br>
 <b>Phone:</b> $phone<br><br>
-<b>Massage:</b><br>$massage
+<b>Massage:</b><br>$massage<br><br>
 <b>Email:</b><br>$email
 ";
 
@@ -46,9 +46,9 @@ $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body;
 
-if(isset($_POST['email'])) {
+if(!empty($_POST['email'])) {
     $body = 'User mail: ' . $_POST['email'];
-} else { $body;
+} else { 
 
 }
 

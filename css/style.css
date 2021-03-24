@@ -1014,19 +1014,17 @@ template {
   height: 165px;
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
 .card-hotel-top__booking-room {
   padding: 0;
-  margin-bottom: 37px;
+  margin-bottom: 43px;
 }
 
 .card-hotel-top__booking-text {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  grid-gap: 17px;
 }
 
 .card-hotel-top__booking-price-wrapper {
@@ -1072,6 +1070,7 @@ template {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  padding: 11px 21px;
   max-width: 125px;
   max-height: 40px;
 }
@@ -1194,6 +1193,7 @@ template {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  padding: 11px 21px;
   max-width: 125px;
   max-height: 40px;
 }
@@ -2156,7 +2156,7 @@ template {
     position: fixed;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 67px;
     padding-top: 30px;
     max-height: 440px;
     width: 325px;
