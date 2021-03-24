@@ -11,8 +11,7 @@ body {
   padding: 0;
 }
 
-body-fixed {
-  width: 100%;
+.fix {
   overflow: hidden;
 }
 
@@ -432,13 +431,13 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 40px;
 }
 
 .navbar__search {
   margin-right: auto;
-  margin-left: 11%;
+  margin-left: 10%;
 }
 
 .logo__image {
@@ -456,10 +455,9 @@ template {
 }
 
 .search__input {
-  width: 350px;
+  width: 347px;
   height: 40px;
-  padding-left: 23px;
-  padding-right: 75px;
+  padding: 1px 75px 2px 21px;
   background-color: #F5FAFE;
   border: none;
   font-size: 12px;
@@ -502,7 +500,7 @@ template {
 }
 
 .user__name {
-  margin-left: 18px;
+  margin: 3px 2px 0 18px;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
@@ -536,6 +534,7 @@ template {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -562,7 +561,7 @@ template {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .breadcrumb-list__link {
@@ -585,16 +584,16 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 6px;
   margin-bottom: 0;
 }
 
 .hotel-info__offer {
-  margin-left: 14px;
+  margin-left: 11px;
 }
 
 .hotel-info__description {
@@ -696,7 +695,7 @@ template {
 }
 
 .stars__img:not(:last-child) {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .offer {
@@ -720,14 +719,15 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 9px 6px;
+  padding: 7px 6px;
   border-radius: 4px;
   background-color: #EC1F46;
   color: #FFFFFF;
+  margin-bottom: 3px;
 }
 
 .rating__text {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   font-weight: 600;
   font-size: 8px;
   line-height: 10px;
@@ -899,6 +899,8 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,9 +913,6 @@ template {
 @media (min-width: 992px) {
   .batton__main:not([disabled]):hover {
     color: #FFFFFF;
-    background-color: #f87c10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     font-size: 20px;
     max-width: 200px;
     font-weight: bold;
@@ -987,6 +986,8 @@ template {
   border-radius: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  padding-left: 45px;
+  padding-top: 22px;
 }
 
 .card-hotel-top__booking-info {
@@ -1035,6 +1036,9 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .card-hotel-top__booking-old-price {
@@ -1065,15 +1069,16 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
+  max-width: 125px;
+  max-height: 40px;
 }
 
 @media (min-width: 992px) {
   .card-hotel-top__booking-button:not([disabled]):hover {
     color: #FFFFFF;
-    background-color: #f87c10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     font-size: 20px;
     max-width: 200px;
     font-weight: bold;
@@ -1153,6 +1158,9 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .card-hotel__booking-old-price {
@@ -1183,15 +1191,16 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
+  max-width: 125px;
+  max-height: 40px;
 }
 
 @media (min-width: 992px) {
   .card-hotel__booking-button:not([disabled]):hover {
     color: #FFFFFF;
-    background-color: #f87c10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     font-size: 20px;
     max-width: 200px;
     font-weight: bold;
@@ -1547,7 +1556,7 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  grid-gap: 34px;
+  grid-gap: 41px;
 }
 
 .footer__logo {
@@ -1601,7 +1610,7 @@ template {
 .footer__contact-form {
   -ms-grid-column-align: end;
       justify-self: end;
-  grid-column: span 2;
+  grid-column: span 3;
   max-width: 539px;
 }
 
@@ -1623,8 +1632,12 @@ template {
   color: #bdbdbd;
 }
 
+.footer__item-bottom {
+  font-size: 12px;
+}
+
 .footer__item-bottom:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 .footer__item-payment:not(:last-child) {
@@ -1695,6 +1708,8 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
   max-width: 165px;
   padding: 18px 66px;
@@ -1717,14 +1732,16 @@ template {
 @media (min-width: 992px) {
   .footer__button:not([disabled]):hover {
     color: #FFFFFF;
-    background-color: #f87c10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     font-size: 20px;
     max-width: 200px;
     font-weight: bold;
     text-shadow: 0.5px 0.5px #0A223D;
   }
+}
+
+.footer__bottom {
+  padding-right: 17px;
+  margin-right: 27%;
 }
 
 .footer__bottom-wrapper {
@@ -1735,7 +1752,7 @@ template {
       grid-template-columns: 1fr min-content;
   -ms-grid-column-span: 5;
       grid-column-end: span 5;
-  justify-items: center;
+  justify-items: end;
 }
 
 .modal__overlay {
@@ -1773,6 +1790,8 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow-y: auto;
+  max-height: 95%;
 }
 
 .modal__dialog--visible {
@@ -1827,6 +1846,8 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
   padding: 18px 66px;
   max-width: 165px;
@@ -1835,9 +1856,6 @@ template {
 @media (min-width: 992px) {
   .modal__button:not([disabled]):hover {
     color: #FFFFFF;
-    background-color: #f87c10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     font-size: 20px;
     max-width: 200px;
     font-weight: bold;

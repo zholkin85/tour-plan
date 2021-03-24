@@ -39,6 +39,8 @@
         border-radius: 0
         border-top-right-radius: 6px
         border-bottom-right-radius: 6px
+        padding-left: 45px;
+        padding-top: 22px;
         &-info
             flex-direction: column
             margin-bottom: 0
@@ -64,6 +66,8 @@
         &-price-wrapper
             display: flex
             justify-content: space-between
+            align-items: flex-end
+            
         &-price
         &-old-price
             font-size: 14px
@@ -76,6 +80,9 @@
             line-height: 30px
         &-button
             @include book-now
+            max-width: 125px
+            max-height: 40px
+                
 .card-hotel
     display: grid
     grid-template-rows: 1fr 
@@ -118,6 +125,7 @@
         &-price-wrapper
             display: flex
             justify-content: space-between
+            align-items: flex-end
         &-old-price
             font-size: 14px
             line-height: 18px
@@ -129,4 +137,6 @@
             line-height: 30px
         &-button
             @include book-now
+            max-width: 125px
+            max-height: 40px
     

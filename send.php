@@ -46,6 +46,11 @@ $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body;
 
+if(isset($_POST['email'])) {
+    $body = 'User mail: ' . $_POST['email'];
+} else { $body;
+
+}
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
