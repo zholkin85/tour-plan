@@ -74,6 +74,11 @@ h2, h3, p {
   overflow: hidden;
 }
 
+.invalid {
+  color: #EC1F46;
+  margin-top: 5px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1675,6 +1680,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   width: 48%;
 }
@@ -1809,7 +1818,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   color: #BDBDBD;
 }
 
@@ -1828,7 +1837,7 @@ template {
   overflow: auto;
   min-height: 123px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   color: #BDBDBD;
 }
 
@@ -1849,8 +1858,9 @@ template {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
-  padding: 18px 66px;
   max-width: 165px;
+  padding: 18px 66px;
+  margin-top: 15px;
 }
 
 @media (min-width: 992px) {
@@ -1963,7 +1973,7 @@ template {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
-  .footer__input {
+  .footer__input-group {
     width: 100%;
   }
   .modal__dialog {
@@ -2135,7 +2145,7 @@ template {
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  .footer__input {
+  .footer__input-group {
     width: 48%;
   }
   .footer__bottom-wrapper {
@@ -2397,7 +2407,7 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__input {
+  .footer__input-group {
     width: 100%;
   }
   .footer__info {

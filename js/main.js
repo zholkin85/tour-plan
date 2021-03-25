@@ -90,4 +90,41 @@ $(document).ready(function() {
             }
         })
     }
+    // Обработка формы
+    $('.form').each(function() {
+            $(this).validate({
+                errorClass: 'invalid',
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: '2',
+                    },
+                    phone: {
+                        required: true,
+                        phone: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                },
+                messages: {
+                    name: {
+                        required: 'Please specify your name',
+                        minlength: 'The name must be at least two letters',
+                    },
+                    email: {
+                        required: 'We need your email address to contact you',
+                        email: 'Your email address must be in the format of name@domain.com',
+                    },
+                    phone: {
+                        required: 'Phone is required',
+                    },
+                },
+            })
+        })
+        //маска номера телефона
+    $('.phone').each(function() {
+        $(this).mask('+7 (999) 999-99-99', { placeholder: '+7 (999) 999-99-99' })
+    })
 })

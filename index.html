@@ -223,7 +223,6 @@
     <section class="packages">
         <div class="container">
             <h2 class="packages__title">Other Packages</h2>
-            <!-- /.packages__title -->
             <div class="packages-wrapper">
                 <div class="card-hotel-top">
                     <div class="card-hotel-top__image">
@@ -489,6 +488,7 @@
         <!-- /.container -->
     </section>
     <!-- /.packages -->
+    <!--  -->
     <section class="newsletter parallax-window" data-parallax="scroll" data-speed="0.1" data-image-src="img/newsletter-bg.jpg">
 
         <div class="newsletter-wrapper">
@@ -781,8 +781,12 @@
                 <div class="footer__contact-form">
                     <h3 class="footer__title title">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
-                        <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone">
+                        <div class="footer__input-group">
+                            <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
+                        </div>
+                        <div class="footer__input-group">
+                            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone">
+                        </div>
                         <textarea class="footer__message footer__input" placeholder="Message" name="massage"></textarea>
                         <div class="footer__button-wrapper">
                             <button class="button footer__button">Send</button>
@@ -852,7 +856,7 @@
             <h3 class="modal__title title">Booking</h3>
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone">
+                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
                 <input type="email" class="input modal__input" placeholder="Email*" name="email">
                 <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
                 <button class="button modal__button">Send</button>
@@ -874,7 +878,7 @@
             <h3 class="modal__title title">Send us a feedback</h3>
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone">
+                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
                 <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info info">* Required Fields</span>
@@ -884,9 +888,12 @@
     </div>
     <!-- /.modal -->
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src=" js/jquery-3.6.0.min.js "></script>
     <script src=" js/parallax.min.js "></script>
     <script src=" js/swiper-bundle.min.js "></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
     <script src=" js/main.js "></script>
 </body>
 
