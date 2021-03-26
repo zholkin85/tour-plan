@@ -7,6 +7,8 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=010e56a1-57e0-41ec-a51c-f007dda17be3&lang=ru_RU" type="text/javascript">
     </script>
+    <link rel="preconnect" href="//api-maps.yandex.ru">
+    <link rel="dns-prefetch" href="//api-maps.yandex.ru">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -209,10 +211,12 @@
                             Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map" data-aos="fade-right" data-aos-offset="300">
-                        <div id="map" style="width: 100%; height: 213px"></div>
+                    <div class="ymap-container" data-aos="fade-right" data-aos-offset="300">
+                        <div class="map">
+                            <div id="map" style="width: 100%; height: 213px"></div>
+                        </div>
+                        <!-- /.map -->
                     </div>
-                    <!-- /.map -->
                 </div>
                 <!-- /.hotel__grid-info -->
             </div>
