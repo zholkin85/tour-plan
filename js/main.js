@@ -49,28 +49,6 @@ $(document).ready(function() {
             zoom: 15,
         })
     }
-    // Функция загрузки API Яндекс.Карт по требованию (в нашем случае при наведении)
-    function loadScript(url, callback) {
-        var script = document.createElement('script')
-
-        if (script.readyState) {
-            // IE
-            script.onreadystatechange = function() {
-                if (script.readyState == 'loaded' || script.readyState == 'complete') {
-                    script.onreadystatechange = null
-                    callback()
-                }
-            }
-        } else {
-            // Другие браузеры
-            script.onload = function() {
-                callback()
-            }
-        }
-
-        script.src = url
-        document.getElementsByTagName('head')[0].appendChild(script)
-    }
 
     var menuButton = $('.menu-button')
     menuButton.on('click', function() {
