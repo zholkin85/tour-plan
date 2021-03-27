@@ -83,15 +83,18 @@
     
 @media  (max-width: 768px)
     .container
-        max-width: 576px
+        max-width: 700px
         width: 92%
+
     .search
         &__input
-            width: 300px
-    .user
-        &__name
-            display: none
+            width: 346px
+            padding: 1px 75px 1px 28px
     .navbar
+        &__nav
+            padding-left: 19px
+        &-wrapper
+            padding-bottom: 31px
         &__mobile
             &--fixed
                 position: fixed
@@ -106,40 +109,49 @@
                 font-size: 11px
                 line-height: 15px
     .breadcrumb
-        margin-top: 180px
+        margin-top: 173px
     .hotel-slider
-        height: 300px
+        height: 451px
     .booking
         width: 49%
     .map
         width: 47%
     .newsletter
+        padding: 95px 1px 87px 0;
         &-wrapper
-            max-width: 576px
+            max-width: 700px
             width: 92%
-            flex-direction: column
-            align-items: flex-start
+            
     .reviews
         &__title
             font-size: 30px
             Line-height: 48px
+            margin-bottom: 44px
         &-slider
             &__item
                 padding: 0 30px 30px
                 &::after, &::before
                     display: none
+            &__text
+                max-width: 451px
             &__button
-                top: 32px
+                top: 173px
                 &--prev
-                    left: 50%
-                    margin-left: -95px
-                    transform: translate(-50%, 0)
+                    left: 0
                 &--next
-                    right: 50%
-                    margin-right: -95px
-                    transform: translate(50%, 0)
+                    right: 0
+    .card
+        max-height: 263px
+        &__image
+        &__title
+            margin-bottom: 19px;
+            width: 54%
     .activities
-        padding: 60px 0 70px 0
+        padding: 67px 0 72px 0
+        &__card
+            height: 257px
+            &:nth-child(-n+2) 
+            margin-bottom: 15px;
     .packages
         padding: 20px 0 50px 0
         &__title
@@ -176,26 +188,45 @@
                 font-size: 18px
                 line-height: 30px
     .footer
+        padding-top: 5px
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 4px
             &:not(:last-child)
                 grid-gap: 40px
         &__logo
-            grid-column: span 2
+            width: 95px
+            height: 201px
+            grid-column: 1
         &__social
             &-network
                 grid-row: 1 / 2
                 grid-column: span 5
                 align-self: center
+                padding-left: 18px
         &__additional
-            grid-column: span 3
-        &__categories
-            grid-row: 2 / 3
+            width: 164%
             grid-column: span 2
+        &__categories
+            width: 140%
+            padding: 0
+            grid-row: 2 / 3
+            grid-column: 1
+        &__legal
+            grid-column: span 3
+            padding-left: 93px
         &__contact
             &-details
                 grid-column: span 6
                 grid-row: 3
+            &-form
+                justify-self: baseline;
+                grid-column: span 5;
+        &__title
+            &-contact-details 
+                margin-top: 59px
+            &-contact-form
+                margin-top: 50px
             &-form
                 grid-column: span 6
                 grid-row: 4
@@ -204,10 +235,11 @@
                 width: 48%
         &__bottom
             &-wrapper
-                grid-template-columns: 1fr
+                grid-template-columns: 1fr min-content
                 grid-column: span 6
-                grid-gap: 10px
-                justify-items: self-start
+                grid-gap: 1px
+                justify-items: baseline
+                padding-top: 14px
     .modal
         &__dialog
             width: 60%
@@ -252,6 +284,15 @@
                 color: $light
                 margin-left: 0
                 margin-top: 10px
+    .reviews
+        &--prev
+            left: 50%
+            margin-left: -95px
+            transform: translate(-50%, 0)
+        &--next
+            right: 50%
+            margin-right: -95px
+            transform: translate(50%, 0)
 
     .menu-button
         width: 16px
