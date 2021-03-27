@@ -83,8 +83,15 @@
         margin-top: 27px
         margin-left: -6px
     &__link
+        +hover
+            color: $primary
         text-decoration: none
         color: inherit
+        transition: 0.5s
+        &-facebook, &-youtube, &-insta
+            +hover
+                transition: transform 0.1s linear
+                transform: scale(1.1)
     &__icon
         width: 20px
         height: 20px

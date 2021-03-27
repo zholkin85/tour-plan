@@ -159,6 +159,8 @@
         font-size: 18px
         line-height: 25px
     &__number
+        +hover
+            color: $primary
         display: flex
         align-items: center
         justify-content: space-between
@@ -168,9 +170,14 @@
         font-weight: 600
         font-size: 18px
         line-height: 25px
+        transition: 0.5s
     &__num
         margin-left: 8px
     &__button
+        +hover
+            color: $primary
+            background-color: #f88622
+            box-shadow: 0 5px 15px #b8b5b54d
         width: 100%
         min-height: 45px
         font-weight: 600
@@ -180,6 +187,7 @@
         background-color: $primary
         border: none
         color: $light
+        transition: 0.5s
         cursor: pointer
 .ymap-container
     width: 347px

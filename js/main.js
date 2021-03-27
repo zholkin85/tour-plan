@@ -50,6 +50,17 @@ $(document).ready(function() {
         })
     }
 
+    var mapContainer = document.getElementById('map')
+    var options_map = {
+        once: true, //запуск один раз, и удаление наблюдателя сразу
+        passive: true,
+        capture: true,
+    }
+    mapContainer.addEventListener('click', init, options_map)
+    mapContainer.addEventListener('mouseover', init, options_map)
+    mapContainer.addEventListener('touchstart', init, options_map)
+    mapContainer.addEventListener('touchmove', init, options_map)
+
     var menuButton = $('.menu-button')
     menuButton.on('click', function() {
         $('.navbar__nav').toggleClass('navbar__nav--visible')

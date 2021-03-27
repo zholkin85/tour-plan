@@ -27,6 +27,10 @@
         font-size: 12px
         line-height: 15px
     &__button
+        +hover
+            color: $primary
+            background-color: #f88622
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3)
         position: absolute
         top: 0
         right: 0
@@ -36,6 +40,7 @@
         height: 100%
         border: none
         background-color: $primary
+        transition: 0.5s
         cursor: pointer
 .user
     display: flex
@@ -47,6 +52,9 @@
         border-radius: 50%
         object-fit: cover
     &__name
+        +hover
+            color: $primary
+        transition: 0.5s
         margin: 3px 2px 0 18px
         font-size: 14px
         line-height: 18px
@@ -64,11 +72,14 @@
     justify-content: space-between
     color: $light
     &__link
+        +hover
+            color: $primary
         color: inherit
         text-decoration: none
         text-transform: uppercase
         font-size: 14px
         line-height: 18px
+        transition: 0.5s
     &__item
         &--mobile
             &--visible

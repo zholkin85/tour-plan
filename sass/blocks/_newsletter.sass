@@ -47,6 +47,10 @@
         Font-size: 14px
         Line-height: 18px
     &__button
+        +hover
+            color: $primary
+            background-color: #f88622
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3)
         position: absolute
         max-width: 21%
         padding: 18px
@@ -62,6 +66,7 @@
         overflow: hidden
         white-space: nowrap
         text-overflow: ellipsis
+        transition: 0.5s
         cursor: pointer
         &:hover
             max-width: 50%
