@@ -251,8 +251,6 @@
         bottom: 0
         top: 67px
         padding-top: 30px
-        max-height: 440px
-        width: 325px
         transition: 0.5s
         transform: translateX(100%)
         overflow: auto
@@ -263,6 +261,8 @@
             padding: 28px 0 28px 0
         &-menu
             flex-direction: column
+            width: 325px
+            max-height: 440px
             &__item
                 margin-bottom: 20px
                 &--mobile
@@ -285,14 +285,19 @@
                 margin-left: 0
                 margin-top: 10px
     .reviews
-        &--prev
-            left: 50%
-            margin-left: -95px
-            transform: translate(-50%, 0)
-        &--next
-            right: 50%
-            margin-right: -95px
-            transform: translate(50%, 0)
+        &-slider
+            &__button
+                top: 
+                &--prev
+                    left: 50%
+                    margin-left: -95px
+                    transform: translate(-50%, 0)
+                    top: 27px
+                &--next
+                    right: 50%
+                    margin-right: -95px
+                    transform: translate(50%, 0)
+                    top: 27px
 
     .menu-button
         width: 16px
@@ -313,6 +318,14 @@
         margin-top: 67px
     .logo
         width: 99px
+    .newsletter
+        &-wrapper
+            display: flex
+            flex-direction: column
+            align-items: baseline
+        &-title
+            &__strong
+                font-size: 30px
     .hotel
         &-wrapper
             display: flex
@@ -346,7 +359,11 @@
         width: 100%
     .map
         width: 100%
+    .card
+        &-title
+            width: 66%
     .activities
+        margin-top: 121px
         &__title
             text-align: center
         &-wrapper
@@ -381,22 +398,42 @@
     .footer
         &-wrapper
             grid-template-columns: 1fr
+            grid-gap: 0
         &__logo
+            max-width: 100px
             grid-row: 1
             grid-column: 1
         &__social
+            &-links
+                margin-top: 17px
             &-network
+                display: flex
+                flex-direction: column
+                align-items: baseline
+                padding: 0
+                margin-bottom: 32px
                 grid-row: 2
                 grid-column: 1
+        &__title
+            &-contact-details
+                margin-top: 36px
+            &-contact-form
+                margin-top: 79px
         &__legal
+            margin-bottom: 23px
+            padding: 0
             grid-row: 3
             grid-column: 1
         &__additional
+            margin-bottom: 29px
+            padding: 0
             grid-row: 4
             grid-column: 1
         &__categories
             grid-row: 5
             grid-column: 1
+            margin-bottom: 4px
+
         &__contact
             &-details
                 grid-row: 6
@@ -415,15 +452,39 @@
                 align-items: start
         &__bottom
             &-wrapper
+                grid-template-columns: 1fr
+                grid-row: 8
                 grid-column: 1
     .modal
         &__dialog
             width: 70%
             padding: 23px 28px
 @media (max-width: 480px)
+    .navbar
+        &__search
+            &--mobile
+                &--visible
+                    margin-left: 10%
+                    margin-right: 15%
+                    margin-bottom: 15px
+
+        &__nav
+            &--visible
+                
+    .hotel
+        padding-top: 7px
+        &-info
+            margin-bottom: 34px
     .hotel-slider
         height: 175px
+    .booking
+        &--320px
+            padding: 21px
+            padding-left: 23px
+            padding-right: 35px
+
     .newsletter
+
         padding: 76px 0 83px 0
         &-title
             margin-bottom: 37px
@@ -457,9 +518,26 @@
     .card
         width: 100%
     .footer
+        &__contact-details
+            padding-right: 7px
+        &__title
+            &-contact-details
+                margin-top: 33px
+            &-contact-form
+                    margin-top: 46px
+        &__form
+            margin-top: 11px
+            width: 90%
         &__item
+            &-contacts
+                grid-column-gap: 11px
             &-bottom:not(:last-child)
                 margin-right: 12px
+        &__text
+            line-height: 160%
+        &__bottom
+            padding: 0
+            margin: 0
     .modal
         &__dialog
             width: 95%
