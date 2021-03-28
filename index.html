@@ -8,7 +8,7 @@
     <link rel="preconnect" href="//api-maps.yandex.ru">
     <link rel="dns-prefetch" href="//api-maps.yandex.ru">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="https://19nikolas85.ru/tour-plan/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://19nikolas85.ru/tour-plan/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -505,7 +505,7 @@
                 </h2>
                 <!-- /.newsletter-title -->
                 <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-                    <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
+                    <input type="email" class="subscribe__input" placeholder="Your email address" required name="email">
                     <button class="subscribe__button">Send</button>
                 </form>
                 <!-- /.subscribe -->
@@ -733,9 +733,9 @@
                     <div class="footer__social-network">
                         <h3 class="footer__title title footer__title--inline">Social Network</h3>
                         <div class="footer__social-links">
-                            <a href="https://ru-ru.facebook.com/" class="footer__link footer__link-facebook"><img src="img/facebook.svg" alt="Icon: facebook"></a>
-                            <a href="https://www.youtube.com/" class="footer__link footer__link-youtube"><img src="img/youtube.svg" alt="Icon: youtube"></a>
-                            <a href="https://www.instagram.com/" class="footer__link footer__link-insta"><img src="img/instagram.svg" alt="Icon: instaIcon"></a>
+                            <a href="https://ru-ru.facebook.com/" target="blank" class="footer__link footer__link-facebook"><img src="img/facebook.svg" alt="Icon: facebook"></a>
+                            <a href="https://www.youtube.com/" target="blank" class="footer__link footer__link-youtube"><img src="img/youtube.svg" alt="Icon: youtube"></a>
+                            <a href="https://www.instagram.com/" target="blank" class="footer__link footer__link-insta"><img src="img/instagram.svg" alt="Icon: instaIcon"></a>
                         </div>
                         <!-- /.footer__social-links -->
                     </div>
@@ -769,24 +769,20 @@
                             <li class="footer__item footer__item-contacts"><img src="img/contact-phone-call.svg" alt="Icon: phone-call" class="footer__icon">
                                 <ul class="footer__ul">
                                     <li class="footer__item">
-                                        <a href="tel:2691500" class="footer__link">Tel (business hours) : 269 1500</a>
+                                        Tel (business hours) :<a href="tel:2691500" class="footer__link"> 269 1500</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a href="tel:52566138" class="footer__link">Tel (hotline) Monday -
-                                            Saturday:
-                                            52-56-61-38 (08:00 am –
-                                            20:00pm)</a>
+                                        Tel (hotline) Monday - Saturday:
+                                        <a href="tel:52566138" class="footer__link"> 52-56-61-38</a>(08:00 am – 20:00pm)
                                     </li>
                                     <li class="footer__item">
-                                        <a href="tel:52566138" class="footer__link">Tel (hotline) Sunday:
-                                            52-56-61-38
-                                            (08:00 am – 14:00
-                                            pm)</a>
+                                        Tel (hotline) Sunday:<a href="tel:52566138" class="footer__link"> 52-56-61-38
+                                        </a>(08:00 am – 14:00 pm)
                                     </li>
                                 </ul>
                             </li>
                             <li class="footer__item footer__item-contacts"><img src="img/email.svg" alt="Icon: email" class="footer__icon">
-                                <a href="email:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
+                                <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
                             </li>
                         </ul>
                     </div>
@@ -872,7 +868,7 @@
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
                 <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
-                <input type="email" class="input modal__input" placeholder="Email*" name="email">
+                <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
                 <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info info">* Required Fields</span>
@@ -893,7 +889,7 @@
             <h3 class="modal__title title">Send us a feedback</h3>
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
+                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
                 <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info info">* Required Fields</span>
