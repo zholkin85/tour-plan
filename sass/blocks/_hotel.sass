@@ -207,11 +207,14 @@
             
 .batton
     &__main
-        +book-now
+        +book-now()
         display: flex
         text-transform: uppercase
         padding: 21px 27px
         margin-bottom: 50px
         &-link
+            +hover
+                color: $primary
+            transition: 0.5s
             text-decoration: none
             color: $light
