@@ -92,9 +92,9 @@
             padding: 1px 75px 1px 28px
     .navbar
         &__nav
-            padding-left: 19px
         &-wrapper
-            padding-bottom: 31px
+            padding-bottom: 32px
+            padding-top: 26px
         &__mobile
             &--fixed
                 position: fixed
@@ -105,11 +105,15 @@
         &__search
             margin-left: 6%
         .navbar-menu
+            padding-right: 20px
+            padding-left: 14px
             &__link
                 font-size: 11px
                 line-height: 15px
     .breadcrumb
-        margin-top: 173px
+        margin-top: 160px
+    .hotel
+        padding-top: 20px
     .hotel-slider
         height: 451px
     .booking
@@ -117,7 +121,7 @@
     .map
         width: 47%
     .newsletter
-        padding: 95px 1px 87px 0;
+        padding: 81px 1px 87px 0;
         &-wrapper
             max-width: 700px
             width: 92%
@@ -163,6 +167,7 @@
     .card-hotel-top
         grid-template-columns: 1fr 1fr
         &__image
+            border-top-right-radius: 6px
             &-hotel
                 max-height: 500px
         &__booking
@@ -204,6 +209,7 @@
                 grid-column: span 5
                 align-self: center
                 padding-left: 18px
+                padding-top: 14px
         &__additional
             width: 164%
             grid-column: span 2
@@ -226,6 +232,7 @@
             &-contact-details 
                 margin-top: 59px
             &-contact-form
+                padding-top: 4px
                 margin-top: 50px
             &-form
                 grid-column: span 6
@@ -370,7 +377,7 @@
             flex-direction: column
             align-items: center
         &__card:nth-last-child(n+2)
-            margin-bottom: 20px
+            margin-bottom: 21px
         &__card
             width: 100%
             &-order-1
@@ -391,7 +398,7 @@
             border-bottom-left-radius: 6px
             border-bottom-right-radius: 6px
             &-text-info
-                overflow: hidden
+                overflow: auto
     .card-hotel
         grid-template-rows: 1fr
         grid-column: span 2
@@ -460,6 +467,8 @@
             width: 70%
             padding: 23px 28px
 @media (max-width: 480px)
+    .container
+        width: 88%
     .navbar
         &__search
             &--mobile
@@ -467,25 +476,38 @@
                     margin-left: 10%
                     margin-right: 15%
                     margin-bottom: 15px
-
-        &__nav
-            &--visible
+    .breadcrumb
+        margin-top: 70px
+        
                 
     .hotel
-        padding-top: 7px
+        &-grid
+            padding-left: 2px
+            padding-top: 1px
+        &__stars
+            margin-right: 17px
+        padding: 0
         &-info
-            margin-bottom: 34px
+            margin-bottom: 37px
+            &__offer
+                margin: 5px 0 6px 2px
     .hotel-slider
+        width: 98%
         height: 175px
+        overflow: hidden
+        padding-left: 1px
+        &__button
+            height: 8px
+            &--prev
+                left: 0
+            &--next
+                right: 0
     .booking
         &--320px
-            padding: 21px
-            padding-left: 23px
-            padding-right: 35px
-
+            padding: 20px 24px 21px 25px
+    .map
     .newsletter
-
-        padding: 76px 0 83px 0
+        padding: 60px 7px 83px 9px
         &-title
             margin-bottom: 37px
             font-weight: 300
@@ -500,13 +522,18 @@
             max-width: 26%
     .reviews
         padding: 40px 0 50px 0
+        &-slider
+            &__text
+                min-height: 271px
         &__title
             margin: auto
             width: 85%
             font-size: 18px
             Line-height: 23px
             margin-bottom: 42px
+            padding-left: 5px
     .activities
+        margin: 0
         padding: 40px 0 60px 0
         &__title
             text-align: left
@@ -517,27 +544,42 @@
             align-items: flex-start
     .card
         width: 100%
+        &__title
+            width: 67%
     .footer
+        padding-top: 10px
         &__contact-details
             padding-right: 7px
         &__title
+            margin-top: 1px
+            &--inline
+                margin-top: -3px
             &-contact-details
                 margin-top: 33px
             &-contact-form
-                    margin-top: 46px
+                    margin-top: 49px
+                    width: 90%
+        &__info
+            margin-bottom: 16px
         &__form
             margin-top: 11px
-            width: 90%
+            width: 100%
         &__item
             &-contacts
                 grid-column-gap: 11px
             &-bottom:not(:last-child)
-                margin-right: 12px
+                margin-right: 10px
+        &__message
+            margin-bottom: 10px
         &__text
-            line-height: 160%
+            line-height: 149%;
+            padding-left: 5px;
         &__bottom
             padding: 0
             margin: 0
+            padding-bottom: 4px
+            &-wrapper
+                padding-top: 33px
     .modal
         &__dialog
             width: 95%

@@ -38,6 +38,7 @@ $(document).ready(function() {
             disableOnInteraction: false,
         },
     })
+
     ymaps.ready(init)
 
     function init() {
@@ -49,17 +50,6 @@ $(document).ready(function() {
             zoom: 15,
         })
     }
-
-    var mapContainer = document.getElementById('map')
-    var options_map = {
-        once: true, //запуск один раз, и удаление наблюдателя сразу
-        passive: true,
-        capture: true,
-    }
-    mapContainer.addEventListener('click', init, options_map)
-    mapContainer.addEventListener('mouseover', init, options_map)
-    mapContainer.addEventListener('touchstart', init, options_map)
-    mapContainer.addEventListener('touchmove', init, options_map)
 
     var menuButton = $('.menu-button')
     menuButton.on('click', function() {

@@ -9,8 +9,8 @@
     <link rel="dns-prefetch" href="//api-maps.yandex.ru">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://19nikolas85.ru/tour-plan/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://19nikolas85.ru/tour-plan/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -122,7 +122,7 @@
                 <div class="hotel-info ">
                     <div class="hotel-info__text">
                         <div class="hotel-wrapper">
-                            <div class="stars">
+                            <div class="stars hotel__stars">
                                 <img class="stars__img" src="img/Star.svg" alt="star">
                                 <img class="stars__img" src="img/Star.svg" alt="star">
                                 <img class="stars__img" src="img/Star.svg" alt="star">
@@ -213,15 +213,16 @@
                                 Options</button>
                         </div>
                         <!-- /.booking -->
-                        <div id="map" class="map-container-fluid" data-aos="fade-right" data-aos-offset="300" style="width: 100%; height: 213px">
+                        <div class="map ymap-container" data-aos="fade-right" data-aos-offset="300">
+                            <div id="map" style="width: 100%; height: 213px"></div>
+                            <!-- /.map -->
+
                         </div>
-                        <!-- /.map -->
+                        <!-- /.hotel__grid-info -->
                     </div>
-                    <!-- /.hotel__grid-info -->
+                    <!-- /.hotel-grid -->
                 </div>
-                <!-- /.hotel-grid -->
-            </div>
-            <!-- /.container -->
+                <!-- /.container -->
         </section>
         <!-- /.hotel -->
         <section class="packages">
@@ -766,13 +767,13 @@
                                         <a href="tel:2691500" class="footer__link">Tel (business hours) : 269 1500</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a href=" tel:52566138 " class="footer__link">Tel (hotline) Monday -
+                                        <a href="tel:52566138" class="footer__link">Tel (hotline) Monday -
                                             Saturday:
                                             52-56-61-38 (08:00 am –
                                             20:00pm)</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a href="tel:52-56-61-38" class="footer__link">Tel (hotline) Sunday:
+                                        <a href="tel:52566138" class="footer__link">Tel (hotline) Sunday:
                                             52-56-61-38
                                             (08:00 am – 14:00
                                             pm)</a>
@@ -852,58 +853,59 @@
             <!-- /.container -->
         </footer>
         <!-- /.footer -->
-    </div>
-    <!-- /.pages -->
-    <div class="modal" id="booking-modal">
-        <div class="modal__overlay">
         </div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog">
-            <a href="#" class="modal__close">
-                <img src="img/close.svg" alt="icon: close">
-            </a>
-            <h3 class="modal__title title">Booking</h3>
-            <form action="send.php" method="POST" class="modal__form form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
-                <input type="email" class="input modal__input" placeholder="Email*" name="email">
-                <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
-                <button class="button modal__button">Send</button>
-                <span class="modal__info info">* Required Fields</span>
-            </form>
-        </div>
-        <!-- /.modal__dialog -->
+        <!-- /.pages -->
+        <div class="modal" id="booking-modal">
+            <div class="modal__overlay">
+            </div>
+            <!-- /.modal__overlay -->
+            <div class="modal__dialog">
+                <a href="#" class="modal__close">
+                    <img src="img/close.svg" alt="icon: close">
+                </a>
+                <h3 class="modal__title title">Booking</h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
+                    <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
+                    <input type="email" class="input modal__input" placeholder="Email*" name="email">
+                    <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__info info">* Required Fields</span>
+                </form>
+            </div>
+            <!-- /.modal__dialog -->
 
-    </div>
-    <!-- /.modal -->
-    <div class="modal" id="rating-modal">
-        <div class="modal__overlay">
         </div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog">
-            <a href="#" class="modal__close">
-                <img src="img/close.svg" alt="icon: close">
-            </a>
-            <h3 class="modal__title title">Send us a feedback</h3>
-            <form action="send.php" method="POST" class="modal__form form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
-                <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
-                <button class="button modal__button">Send</button>
-                <span class="modal__info info">* Required Fields</span>
-            </form>
+        <!-- /.modal -->
+        <div class="modal" id="rating-modal">
+            <div class="modal__overlay">
+            </div>
+            <!-- /.modal__overlay -->
+            <div class="modal__dialog">
+                <a href="#" class="modal__close">
+                    <img src="img/close.svg" alt="icon: close">
+                </a>
+                <h3 class="modal__title title">Send us a feedback</h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
+                    <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
+                    <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__info info">* Required Fields</span>
+                </form>
+            </div>
+            <!-- /.modal__dialog -->
         </div>
-        <!-- /.modal__dialog -->
-    </div>
-    <!-- /.modal -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src=" js/parallax.min.js "></script>
-    <script src=" js/swiper-bundle.min.js "></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=010e56a1-57e0-41ec-a51c-f007dda17be3&lang=ru_RU" type="text/javascript"></script>
-    <script src="js/aos.js"></script>
-    <script src=" js/main.js "></script>
+        <!-- /.modal -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src=" js/parallax.min.js "></script>
+        <script src=" js/swiper-bundle.min.js "></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=010e56a1-57e0-41ec-a51c-f007dda17be3&lang=ru_RU"></script>
+        <script src=" js/aos.js ">
+        </script>
+        <script src=" js/main.js "></script>
 </body>
 
 </html>
