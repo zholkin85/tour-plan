@@ -42,12 +42,25 @@ $(document).ready(function() {
     ymaps.ready(init)
 
     function init() {
-        // Создание карты.
-        var myMap = new ymaps.Map('map', {
-            center: [7.838358, 98.298838],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 15,
+        var myMap
+
+        $('#toggle').bind({
+            mouseenter: function() {
+                if (!myMap) {
+                    myMap = new ymaps.Map(
+                        'map', {
+                            center: [7.838358, 98.298838],
+                            zoom: 15,
+                        }, {
+                            searchControlProvider: 'yandex#search',
+                        },
+                    )
+                } else {
+                    myMap.destroy() // Деструктор карты
+                    myMap = null
+                    $('#toggle').attr('value', 'Показать карту снова')
+                }
+            },
         })
     }
 
