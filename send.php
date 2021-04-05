@@ -9,17 +9,48 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $massage = $_POST['massage'];
 $email = $_POST['email'];
+$emailSub = $_POST['emailSub'];
+$nameFoot = $_POST['nameFoot'];
 
 // Формирование самого письма
 $title = "New massage Best Tour Plan";
 $body = "
 <h2>New massage</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
+<b>Name: </b> $name<br>
+<b>Phone: </b> $phone<br><br>
 <b>Massage:</b><br>$massage<br><br>
-<b>Email:</b><br>$email
+<b>Email: </b> $email
 ";
 
+$bodyMail = "
+<h2>New subscription</h2>
+<b>Email: </b> $emailSub
+";
+
+$bodyFoot = "
+<h2>New massage</h2>
+<b>Name: </b> $nameFoot<br>
+<b>Phone: </b> $phone<br><br>
+<b>Massage:</b><br>$massage<br><br>
+";
+
+
+
+if(isset($_POST['emailSub'])){
+    // если есть что-то в $_POST['email']
+    $body = $bodyMail;
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+    $body; 
+}
+
+if(isset($_POST['nameFoot'])){
+    // если есть что-то в $_POST['email']
+    $body = $bodyFoot;
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+    $body; 
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -46,12 +77,6 @@ $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body;
 
-if(!empty($_POST['email'])) {
-    $body = 'User mail: ' . $_POST['email'];
-} else { 
-
-}
-
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
@@ -59,16 +84,6 @@ else {$result = "error";}
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-}
-
-if(isset($_POST['email'])){
-    // если есть что-то в $_POST['email']
-    $body = 'User mail: ' . $_POST['email'];
-} else {
-    // если нет, отправлена форма с телефоном и пр.
-    $body = 'name: ' . $_POST['name'] . ' <br />';
-    $body .= 'phone: ' . $_POST['phone'] . ' <br />';
-    $body .= 'message: ' . $_POST['message'] . ' <br />';
 }
 
 // Отображение результата

@@ -505,7 +505,7 @@
                 </h2>
                 <!-- /.newsletter-title -->
                 <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-                    <input type="email" class="subscribe__input" placeholder="Your email address" required name="email">
+                    <input type="email" class="subscribe__input" placeholder="Your email address" required name="emailSub">
                     <button class="subscribe__button">Send</button>
                 </form>
                 <!-- /.subscribe -->
@@ -791,7 +791,7 @@
                         <h3 class="footer__title footer__title-contact-form title">Send us a message</h3>
                         <form action="send.php" method="POST" class="footer__form form">
                             <div class="footer__input-group">
-                                <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
+                                <input type="text" class="input footer__input" placeholder="Your Full Name" name="nameFoot" required>
                             </div>
                             <div class="footer__input-group">
                                 <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone">
@@ -889,21 +889,21 @@
             <h3 class="modal__title title">Send us a feedback</h3>
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
-                <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
-                <button class="button modal__button">Send</button>
-                <span class="modal__info info">* Required Fields</span>
+                <input id="input" type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" pattern="[0-9]{10}>
+                <textarea class=" modal__message input " placeholder=" Message " name=" massage "></textarea>
+                <button class=" button modal__button ">Send</button>
+                <span class=" modal__info info ">* Required Fields</span>
             </form>
         </div>
         <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js "></script>
     <script src=" js/parallax.min.js "></script>
     <script src=" js/swiper-bundle.min.js "></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=010e56a1-57e0-41ec-a51c-f007dda17be3&lang=ru_RU"></script>
+    <script src=" js/jquery.validate.min.js "></script>
+    <script src=" js/jquery.mask.js "></script>
+    <script src=" https://api-maps.yandex.ru/2.1/?apikey=010e56a1-57e0-41ec-a51c-f007dda17be3&lang=ru_RU "></script>
     <script src=" js/aos.js ">
     </script>
     <script src=" js/main.js "></script>
