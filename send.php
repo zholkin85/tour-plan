@@ -61,5 +61,15 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
+if(isset($_POST['email'])){
+    // если есть что-то в $_POST['email']
+    $body = 'User mail: ' . $_POST['email'];
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+    $body = 'name: ' . $_POST['name'] . ' <br />';
+    $body .= 'phone: ' . $_POST['phone'] . ' <br />';
+    $body .= 'message: ' . $_POST['message'] . ' <br />';
+}
+
 // Отображение результата
 header('location: thankyou.html');
