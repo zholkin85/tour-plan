@@ -252,8 +252,20 @@
         &__dialog
             width: 60%
             padding: 23px 28px
+@media (max-width: 700px)
+    .user
+        &__name
+            display: none
+        &__avatar
+            margin-left: 30%
+    .navbar
+        .navbar-menu
+            padding-left: 0
+            padding-right: 0
+    
 @media (max-width: 576px)
     .navbar__nav
+        width: 100%
         position: fixed
         right: 0
         bottom: 0
@@ -265,6 +277,8 @@
         &--visible
                 transform: translateX(0%)
     .navbar
+        .navbar-menu
+            width: 100%
         &-wrapper
             padding: 28px 0 28px 0
         &-menu
@@ -292,6 +306,8 @@
                 color: $light
                 margin-left: 0
                 margin-top: 10px
+        &__avatar
+            margin-left: 0
     .reviews
         &-slider
             &__button
@@ -473,16 +489,26 @@
     .navbar
         &__nav
             padding-top: 23px
-            padding-right: 11px
+            padding-right: 0
         &-menu
             padding-right: 19px
             padding-left: 13px
         &__search
             &--mobile
                 &--visible
-                    margin-left: 10%
+                    margin-left: 15%
                     margin-right: 15%
-                    margin-bottom: 15px
+                    margin-bottom: 17px
+                    margin-top: 7px
+    .user
+        &__name
+            &--light
+                margin-left: 8px
+                margin-top: 0
+        &__avatar
+            margin-left: 4%
+            margin-top: -9px
+            margin-bottom: 9px
     .breadcrumb
         margin-top: 70px
         
