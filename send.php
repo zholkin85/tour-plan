@@ -34,10 +34,16 @@ $bodyFoot = "
 <b>Massage:</b><br>$massage<br><br>
 ";
 
+$bodyFeedback = "
+<h2>New massage feedback</h2>
+<b>Name: </b> $nameFeedback<br>
+<b>Phone: </b> $phone<br><br>
+";
+
 
 
 if(isset($_POST['emailSub'])){
-    // если есть что-то в $_POST['email']
+    // если есть что-то в $_POST['emailSub']
     $body = $bodyMail;
 } else {
     // если нет, отправлена форма с телефоном и пр.
@@ -45,7 +51,6 @@ if(isset($_POST['emailSub'])){
 }
 
 if(isset($_POST['nameFoot'])){
-    // если есть что-то в $_POST['email']
     $body = $bodyFoot;
 } else {
     // если нет, отправлена форма с телефоном и пр.
