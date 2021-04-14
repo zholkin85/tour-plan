@@ -35,9 +35,7 @@
     width: 350px
     height: 55px
     border-radius: 4px
-    overflow: hidden
     &__input
-        position: absolute
         width: 100%
         height: 100%
         border: none
@@ -46,6 +44,8 @@
         font-weight: 300
         Font-size: 14px
         Line-height: 18px
+        border: none
+        border-radius: 4px
     &__button
         +hover
             color: $primary
@@ -58,9 +58,10 @@
         top: 0
         height: 100%
         border: none
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        border-radius: 0 4px 4px 0
         background-color: $primary
         color: $light
         overflow: hidden

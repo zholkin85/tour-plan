@@ -1,13 +1,13 @@
 *
     box-sizing: border-box
-html
-    margin-right: calc(-1 * (100vw - 100%))
-body 
+    outline: none
+body
+    padding: 0 calc(18px - (100vw - 100%)) 0 0
     font-family: 'Mulish', sans-serif
     background-color: $secondary
     color: $text-color
     margin: 0
-    padding: 0
+    
 .pages
     overflow: hidden
 .fix
@@ -80,11 +80,12 @@ h2, h3, p
     align-items: baseline
     justify-content: space-between
     flex-wrap: wrap
+    z-index: 99
 .fixed
     position: fixed
     width: 100%
     overflow: hidden
 .invalid
     color: $primary
-    margin-top: 5px
-    overflow: hidden
+    font-size: 12px
+    line-height: 15px
