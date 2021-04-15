@@ -1,8 +1,10 @@
 *
     box-sizing: border-box
     outline: none
+html
+    margin-right: calc(-1 * (100vw - 100%))
 body
-    padding: 0 calc(18px - (100vw - 100%)) 0 0
+    overflow-x: hidden
     font-family: 'Mulish', sans-serif
     background-color: $secondary
     color: $text-color
@@ -11,7 +13,7 @@ body
 .pages
     overflow: hidden
 .fix
-    overflow: hidden
+    overflow-y: hidden
 .container
     max-width: 1110px
     margin: 0 auto
