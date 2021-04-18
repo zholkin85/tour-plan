@@ -80,7 +80,12 @@ $(document).ready(function() {
         var targetModal = $(this).attr('data-href')
         $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible')
         $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible')
+        var paddingOffset = innerWidth - document.body.offsetWidth + 'px'
+        var marginOffset = document.body.offsetWidth - innerWidth + 'px'
         $('body').addClass('fix')
+        $('body').css('padding-right', paddingOffset)
+        $('body').css('margin-right', marginOffset)
+        $('body').css('margin-left', marginOffset)
     }
 
     function closeModal(event) {
@@ -90,6 +95,8 @@ $(document).ready(function() {
         modalOverlay.removeClass('modal__overlay--visible')
         modalDialog.removeClass('modal__dialog--visible')
         $('body').removeClass('fix')
+        $('body').css('padding', 0)
+        $('body').css('margin', 0)
     }
     $('.modal__overlay').on('click', closeModal)
 
